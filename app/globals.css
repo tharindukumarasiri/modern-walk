@@ -2,32 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-lightGray;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  h1 {
+    font-size: clamp(1.875rem ,2.5vw ,3rem);
+    @apply font-semibold;
+  }
+  h2 {
+    font-size: clamp(1.25rem ,2.5vw ,1.875rem);
+    @apply font-semibold;
+  }
+  h3 {
+    font-size: clamp(1.125rem ,2.5vw ,1.5rem);
+    @apply font-semibold;
+  }
+  h4 {
+    font-size: clamp(1rem ,2.5vw ,1.25rem);
+    @apply font-semibold;
+  }
+  p {
+    font-size: clamp(0.75rem ,2.5vw ,1rem);
+  }
 }
+
+.slick-next:before{
+  color: lightgray !important;
+}
+
+.slick-prev:before{
+  color: lightgray !important;
+}
+
+.text-multiline-ellipsis { 
+  display: -webkit-box; 
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 3; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+} 
