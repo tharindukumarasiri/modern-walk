@@ -30,19 +30,19 @@ export const settings = {
   pauseOnHover: true,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1368,
       settings: {
         slidesToShow: 3,
       },
     },
     {
-      breakpoint: 600,
+      breakpoint: 1045,
       settings: {
         slidesToShow: 2,
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 718,
       settings: {
         slidesToShow: 1,
       },
