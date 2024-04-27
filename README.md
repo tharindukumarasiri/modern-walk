@@ -3,15 +3,11 @@
 #### Modern Walk is a fashion retail web app
 
 This is a quick prototype before moving to the
-development phase. Created for WireApps
+development phase. Created for WireApps.
 
 |           Overview           |
 | :--------------------------: |
 | ![Sample](public/Sample.gif) |
-
-## Live Demo
-
-Check out the live demo [here](https://github.com/tharindukumarasiri/react-dnd-diagrams/tree/main/demo/src)
 
 ## Technologies used
 
